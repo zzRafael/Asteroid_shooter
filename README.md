@@ -1,2 +1,2 @@
 # Asteroid_shooter
- A simple game from Udemy course
+It's a simple game in Python.
