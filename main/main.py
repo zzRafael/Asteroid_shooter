@@ -37,19 +37,19 @@ def laser_timer(can_shoot, duration = 100):
     return can_shoot
 
 # import images
-background_surf = pygame.image.load('without_classes/graphics/background.png').convert()
+background_surf = pygame.image.load('graphics\\background.png').convert()
 
-ship_surf = pygame.image.load('without_classes/graphics/ship.png').convert_alpha()
+ship_surf = pygame.image.load('graphics\ship.png').convert_alpha()
 ship_rect = ship_surf.get_rect(center = (WINDOW_WIDTH / 2, WINDOW_HEIGHT / 2) )
 
-laser_surf = pygame.image.load('without_classes/graphics/laser.png').convert_alpha()
+laser_surf = pygame.image.load('graphics\laser.png').convert_alpha()
 laser_list = []
 
-meteor_surf = pygame.image.load('without_classes/graphics/meteor.png').convert_alpha()
+meteor_surf = pygame.image.load('graphics\meteor.png').convert_alpha()
 meteor_list = []
                                
 # import text
-font = pygame.font.Font('without_classes/graphics/subatomic.ttf', 50)
+font = pygame.font.Font('graphics\subatomic.ttf', 50)
 
 # laser timer
 can_shoot = True
@@ -60,9 +60,9 @@ meteor_timer = pygame.event.custom_type()
 pygame.time.set_timer(meteor_timer, 250)
 
 #importing sounds
-laser_sound = pygame.mixer.Sound('without_classes/sounds/laser.ogg')
-explosion_sound = pygame.mixer.Sound('without_classes/sounds/explosion.wav')
-background_music = pygame.mixer.Sound('without_classes/sounds/music.wav')
+laser_sound = pygame.mixer.Sound('sounds\laser.ogg')
+explosion_sound = pygame.mixer.Sound('sounds\explosion.wav')
+background_music = pygame.mixer.Sound('sounds\music.wav')
 background_music.play(loops = -1)
 
 while True:

@@ -1,5 +1,6 @@
 import pygame, sys
 
+
 # init pygame
 pygame.init()
 
